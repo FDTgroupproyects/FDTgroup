@@ -1,0 +1,297 @@
+:root {
+  --blue: #177f9f;
+  --green-state: #11971c;
+  --white: white;
+  --border-color: #e7e7e7;
+  --border-shadow: #cfcfcf;
+  --color-p: #333333;
+  --color-p-length: #797979;
+  --color-items-p: #292929;
+  --color-inputs: #f3f3f3;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--white);
+}
+/*
+.middle-section
+Aplicamos un padding de 0.625rem  a todo, un borde y un margen en Y de 10
+*/
+.middle-section {
+  border-radius: 1rem;
+  padding: 0.625rem 0.781rem;
+  border: 0.031rem solid var(--border-color);
+  box-shadow: 0 0 0.313rem var(--border-shadow);
+  margin: 0.625rem 0rem;
+  display: block;
+}
+/*
+.padding-type-a
+ordena la cabecera(texto e items) de la sección
+*/
+.display-section {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.padding-type-a {
+  padding: 0rem 0.313rem;
+}
+.padding-type-c {
+  padding: 0rem 0.125rem;
+}
+.display-flex {
+  display: flex;
+}
+/*
+.items
+ordena a los items o acciones que tendrá la cabecera de la seción
+*/
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/*
+texto de cabecera 
+*/
+.head-title-a,
+.head-title-b {
+  color: var(--color-p);
+  font-size: medium;
+}
+.head-title-b {
+  font-size: large;
+  font-weight: 500;
+}
+/*
+estilos de cada uno de los items y texto
+*/
+.items p,
+svg {
+  margin: 0rem 0.438rem;
+}
+/*
+estilos de letra para nombre de acción
+*/
+.items p,
+.date {
+  color: var(--color-items-p);
+  font-size: small;
+}
+/*
+estilos de letra para fecha
+*/
+.items .date {
+  font-size: 0.625rem;
+  font-weight: 400;
+}
+/*
+estilos para svg
+*/
+.items svg {
+  background-color: var(--blue);
+  font-size: small;
+  padding: 0.313rem;
+  border-radius: 100%;
+  width: 0.938rem;
+  height: 0.938rem;
+  cursor: pointer;
+}
+.items svg path {
+  fill: var(--white);
+}
+
+/*
+estilos de los estados de la sección
+*/
+.items .states {
+  display: flex;
+  justify-content: space-between;
+}
+.items .states span {
+  border-radius: 100%;
+  width: 0.938rem;
+  height: 0.938rem;
+  display: block;
+  margin: 0rem 0.156rem;
+}
+.states .state-a {
+  background-color: var(--blue);
+}
+.states .state-b {
+  background-color: var(--green-state);
+}
+
+/*
+estilos de input text
+*/
+.middle-section .inputs {
+  padding: 0.313rem 0.313rem 0.313rem 0.313rem;
+  background-color: var(--color-inputs);
+  margin: 0.625rem 0rem;
+  border: none;
+  border-radius: 0.438rem;
+}
+.inputs-b {
+  padding: 0;
+}
+.inputs input[type="text"],
+textarea,
+select {
+  margin: 0.313rem 0rem;
+  display: block;
+  width: 100%;
+  background-color: var(--color-inputs);
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+.inputs textarea {
+  resize: none;
+  height: 4rem;
+}
+.inputs select {
+  padding: 0 0.625rem !important;
+  font-size: small;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+  cursor: pointer;
+}
+.inputs i {
+  color: var(--color-p-length);
+  margin: 0rem 0rem 0rem 0.313rem;
+  cursor: pointer;
+}
+.inputs p {
+  text-align: right;
+  font-size: 0.625rem;
+  font-weight: 600;
+  margin: 0rem 0.188rem;
+  color: var(--color-p-length);
+}
+.inputs-with-label label {
+  text-align: left;
+  font-size: 0.75rem;
+  margin: 0rem 0.313rem;
+  font-weight: 500;
+  color: var(--color-p-length);
+}
+.inputs input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.inputs input[type="text"]::placeholder,
+textarea::placeholder {
+  color: var(--color-items-p);
+  font-weight: 500;
+}
+
+/*
+estilos de footer de seccion
+estilos delos botones
+*/
+
+.items button {
+  padding: 0.313rem 1.563rem;
+  margin: 0rem 0.438rem;
+  background-color: var(--blue);
+  border-radius: 0.313rem;
+  cursor: pointer;
+  color: var(--white);
+  font-weight: 600;
+  border: solid var(--blue);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.313rem;
+}
+.items .button-cancel {
+  color: var(--color-p-length);
+  background-color: var(--white);
+  border: solid var(--blue);
+}
+
+/*
+Estilos de avatar
+*/
+.avatar {
+  margin: 0.625rem 0rem;
+}
+.avatar img {
+  width: 2.188rem;
+  height: 2.188rem;
+  border-radius: 100%;
+  margin: 0rem 0.313rem;
+}
+.avatar p {
+  font-weight: 600;
+  font-size: 1.563rem;
+}
+
+.file-upload {
+  cursor: pointer;
+  padding: 3.125rem;
+  background-color: var(--color-inputs);
+  margin: 0.625rem 0rem;
+  border: none;
+  border-radius: 0.438rem;
+}
+.file-upload input[type="file"] {
+  display: none;
+}
+.file-upload img {
+  display: none;
+  margin: 0 auto;
+  width: 90%;
+}
+.file-upload svg {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  fill: var(--color-p);
+}
+
+/*
+items share de footer section C
+*/
+.items-share label {
+  color: var(--color-p);
+  font-size: small;
+  margin-right: 0;
+}
+
+.items-share svg {
+  fill: var(--blue);
+  width: 0.938rem;
+  height: 0.938rem;
+}
+
+/*MD*/
+@media only screen and (max-width: 600px) {
+  .padding-type-a {
+    display: block;
+  }
+  .items {
+    margin: 0.625rem 0rem;
+  }
+  .display-flex {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .items-share {
+    display: flex;
+  }
+  .avatar {
+    text-align: left;
+    justify-content: center;
+    justify-content: start;
+  }
+}
