@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root{
+    --azul: #177F9F;
+
+    --negro: #121212;
+
+    --negroSections: #040404;
+
+    --grisclaro: #F3F3F3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+}
+header{
+    width: 100%;
+    height: 150px;
+}
+.info{
+    width: 30%;
+    height: 100vh;
+}
+.main{
+    width: 50%;
+    height: 100vh;  
+}
+
+/*CSS TAREJETAS DE PENDIENTES*/
+
+.container-cards{
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+   
+
+}
+.menu{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    padding-right: 0;
+    margin-left: 80px;
+}
+.action{
+    padding: 10px;
+    border-radius: 100%;
+    background-color: var(--azul);
+    margin: 10px;
+    color: #fff;
+}
+.bx{
+    font-size: 30px;
+
+}
+.card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column nowrap;
+    flex: 1 1 auto;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px 2px rgb(207, 207, 207);
+    margin-bottom: 100px;
+}
+.title-card{
+    /*margin-bottom: 5px;*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-box{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.title{
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.colors{
+    width: 100%;
+    margin: auto;
+    margin-left: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: var(--azul);
+}
+.yellow{
+    background-color: #f1f100;
+}
+.circle{
+    width: 5px;
+    padding: 10px;
+    border-radius: 100%;
+    /*background-color: #000;*/
+    margin: 2px;
+}
+.date{
+    color: #868686;
+    margin-bottom: 10px;
+}
+.description{
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 100px;
+    border: 0;
+    border-radius: 10px;
+    color: #000;
+    background-color: var(--grisclaro);   
+}
+.buttons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#save{
+    border: 0;
+    background-color: var(--azul);
+    color: #F3F3F3;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bxs-plus-circle{
+    font-size: 30px;
+    color: var(--azul);
+   
+}
