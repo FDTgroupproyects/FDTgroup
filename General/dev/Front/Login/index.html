@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registrate en FDT</title>
+	<!-- invocación stilos -->
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- invocación cdn google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- invocación cdn 'Poppins' font by google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<!-- invocación cdn BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<!-- Espacio para agregar NavBar -->
+	<nav></nav>
+
+	<!-- Título centrado -->
+	<div id="bx-title">
+		<h2>Estas a unos pasos de aprender y ser todo un profesional</h2>
+	</div>
+
+	<!-- Formulario centrado (form, img) -->
+	<div id="container">
+		<!-- Contenido del formulario (inputs, buttons) -->
+		<div id="container__contain-form">
+			<!-- Contenido título formulario de adentro -->
+			<div id="container__title-form">
+				<i class='bx bxs-user-detail'></i>
+				<h3>Crea tu cuenta</h3>
+				<p>Comencemos con tus datos personales</p>
+			</div>
+			<!-- Contenido para los inputs -->
+			<div class="container_inputs-form">
+				<!-- Formulario principal 1 -->
+				<form action="#" id="form" name="form" class="container__form-style">
+					<!-- Inputs y entradas -->
+					<input type="text" name="name" class="form__input" placeholder="Nombre completo">
+					<input type="text" name="nickname" class="form__input" placeholder="Apellido">
+					<!-- País, código postal y tel -->
+					<select name="country" id="form__select">
+						<option value="+57">+57 Colombia</option>
+					</select>
+					<input type="number" name="tel" class="form__input" placeholder="Teléfono">
+					<!-- radio buttons género -->
+					<div class="form__gender">
+						<input type="radio" id="form__gender" name="gender" class="form__gender" value="Masculino">
+						<label for="gender">Masculino</label>
+						<input type="radio" id="form__gender" name="gender" class="form__gender" value="Femenino">
+						<label for="gender">Femenino</label>
+						<input type="radio" id="form__gender" name="gender" class="form__gender">
+						<!-- Especificar otro genero -->
+						<label for="gender">Otro</label>
+						<input type="text" name="otro" id="gender_other" class="input" placeholder="Especifica">
+					</div>
+					<!-- Segunda opción -->
+					<span>¿Ya tienes una cuenta? <a href="#" class="link opt-link">Entra aquí</a></span>
+					<!-- Button next -->
+					<button class="btn" id="btn">Siguiente</button>
+				</form>
+			</div>
+		</div>
+		<!-- Contenido de los pasos -->
+		<div id="container__contain-steps">
+			<span>Paso 1 de 3</span>
+			<!-- contenedor pasos (position:absolute) -->
+			<div id="container__steps">
+				<div class="bx-step check"></div>
+				<div class="bx-step"></div>
+				<div class="bx-step"></div>
+			</div>
+		</div>
+		<!-- Contenido de la imágen (svg) -->
+		<div id="container__contain-img">
+			<!-- Img by Undraw.co -->
+			<img src="img/ilustracion_1.svg" alt="ilustracion_formulario">
+		</div>
+	</div>
+
+</body>
+</html>
