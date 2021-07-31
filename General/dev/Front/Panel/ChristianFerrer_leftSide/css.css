@@ -1,0 +1,102 @@
+:root {
+  --blue: #177f9f;
+  --white: white;
+  --border-shadow: #cfcfcf;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--white);
+}
+
+/*
+estilos para svg
+*/
+.svg-style svg {
+  background-color: var(--blue);
+  font-size: small;
+  padding: 0.313rem;
+  border-radius: 100%;
+  width: 0.938rem;
+  height: 0.938rem;
+  cursor: pointer;
+}
+.svg-style svg path {
+  fill: var(--white);
+}
+
+/*
+estilos de los estados de la sección
+*/
+.states {
+  display: flex;
+  justify-content: space-between;
+}
+.states span {
+  border-radius: 100%;
+  width: 0.938rem;
+  height: 0.938rem;
+  display: block;
+  margin: 0rem 0.156rem;
+}
+.states .state-a {
+  background-color: var(--blue);
+}
+.states .state-b {
+  background-color: var(--green-state);
+}
+.states .state-c {
+  background-color: var(--border-shadow);
+}
+
+/*left section styles*/
+.left-section .list {
+  padding: 0px 15px 2px 0px;
+}
+.left-section .list h2 {
+  margin: 5px 0px;
+}
+
+.list-items {
+  display: flex;
+  margin: 10px 0px;
+}
+.list-items p {
+  margin: 0 0 0 0;
+}
+.list-items svg {
+  margin: 0 20px 0 0;
+  justify-self: center;
+}
+.list-items span {
+  font-weight: 500;
+  font-size: medium;
+}
+.left-section hr {
+  border: var(--blue) 2px solid;
+}
+.skills-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95vw;
+  text-align: justify;
+}
+.list-skills-name {
+  padding: 0 0 0 20px;
+}
+.list-skills-name li {
+  list-style: disc;
+  font-size: medium;
+}
+.list-skills-level {
+  justify-self: right;
+}
+.items-skils-level {
+  align-items: center;
+  height: 25px;
+}
+
+/*MD*/
+@media only screen and (max-width: 600px) {
+}
