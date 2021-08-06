@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registrate en FDT</title>
+	<!-- invocación stilos -->
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- invocación cdn google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- invocación cdn 'Poppins' font by google fonts --> 
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<!-- invocación cdn BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<!-- Espacio para agregar NavBar -->
+	<nav></nav>
+
+	<main>
+
+		<!-- Título centrado -->
+		<div id="bx-title">
+			<span>Estas a unos pasos de aprender y ser todo un profesional</span>
+		</div>
+
+		<!-- Formulario centrado (form, img) -->
+		<div id="container">
+
+			<!-- Contenido del formulario (inputs, buttons) -->
+			<section id="container__contain-form">
+				<!-- Contenido título formulario de adentro -->
+				<div id="container__title-form">
+					<i class='bx bxs-user-detail'></i>
+					<h3>Crea tu cuenta</h3>
+					<p>Comencemos con tus datos personales</p>
+				</div>
+
+				<!-- Contenido para los inputs -->
+				<div class="container_inputs-form">
+
+					<!-- Formulario principal 1 -->
+					<form action="../php/envio.php" id="form" name="form" method="POST" class="container__form-style">
+						<!-- Inputs y entradas -->
+						<input type="text" name="nombres" class="form__input" placeholder="Nombre completo">
+						<input type="text" name="apellidos" class="form__input" placeholder="Apellido">
+
+						<!-- País, código postal y tel -->
+						<span class="title-select">Código postal (país)</span>
+						<select name="pais" id="form__select" class="form__select">
+							<option value="Colombia">Colombia</option>
+							<option value="+57 Colombia">+57 Colombia</option>
+							<option value="+52 Mexico">+52 Mexico</option>
+						</select>
+						<input type="telefono" name="telefono" class="form__input medium" placeholder="Teléfono">
+
+						<!-- radio buttons género -->
+						<div class="form__bx-gender">
+							<span class="title-gender">Género</span>
+							<div class="radio-container">
+								<input type="radio" id="form__gender" name="genero" class="form__gender" value="Masculino">
+								<label for="gender" class="label-gender">Masculino</label>
+								<input type="radio" id="form__gender" name="genero" class="form__gender" value="Femenino">
+								<label for="gender" class="label-gender">Femenino</label>
+								<input type="radio" id="form__gender" name="genero" class="form__gender">
+								<!-- Especificar otro genero -->
+								<label for="gender" class="label-gender">Otro</label>
+							</div>
+							
+						</div>
+
+						<!-- Segunda opción -->
+						<span class="opt-segunda">¿Ya tienes una cuenta? <a href="#" class="link opt-link">Entra aquí</a></span>
+						<!-- Button next -->
+						<button class="btn" id="btn" type="submit">Siguiente</button>
+					</form>
+				</div>
+			</section>
+
+			<!-- Contenido de los pasos -->
+			<section id="container__contain-steps">
+				<span class="title-steps">Paso 1 de 3</span>
+				<!-- contenedor pasos (position:absolute) -->
+				<div id="container__steps">
+					<div class="bx-step check"></div>
+					<div class="bx-step un-check"></div>
+					<div class="bx-step un-check"></div>
+				</div>
+			</section>
+
+			<!-- Contenido de la imágen (svg) -->
+			<section id="container__contain-img">
+				<!-- Img by Undraw.co -->
+				<img src="img/ilustracion_1.svg" alt="ilustracion_formulario">
+			</section>
+		</div>
+	</main>
+	
+
+</body>
+</html>

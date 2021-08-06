@@ -1,0 +1,253 @@
+/* ESTILOS GENERALES */
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins';
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background-color: #2F2E41;
+}
+
+/* NAVBAR SIMULADA */
+nav{
+	width: 100%;
+	height: 50px;
+	background-color: #000005;
+}
+
+/* COLORES: 2F2E41, 3F3D56, 26B0EB, 177F9F */
+
+/* CONTENIDO PRINCIAL */
+main{
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+/* TITULO DE CONTENIDO PRINCIPAL */
+#bx-title{
+	width: 800px;
+	border: none;
+	border-bottom: 2px solid white;
+	margin-top: 100px;
+}
+
+#bx-title span{
+	display: block;
+	margin-bottom: 15px;
+	color: white;
+	font-size: 27px;
+	font-weight: 600;
+	text-align: center;
+}
+
+/* CONTENIDO DEL FORMULARIO (3 SECCIONES) */
+	
+
+#container{
+	margin-top: 45px;
+	padding: 30px 45px;
+	display: flex;
+	height: auto;
+	flex-wrap: wrap;
+	flex-flow: row;
+	width: 600px;
+	border: none;
+	border-radius: 24px;
+	background-color: #3F3D56;
+}
+
+
+/* TITULO FORMULARIO (INPUTS) */
+
+.container_inputs-form{
+	max-width: 280px;
+}
+
+#container__title-form{
+	max-width: 300px;
+	margin-bottom: 20px;
+}
+
+#container__title-form i{
+	position: absolute;
+	top: 285px;
+	font-size: 38px;
+	color: white;
+}
+
+#container__title-form h3{
+	display: block;
+	margin-left: 45px;
+	color: white;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+#container__title-form p{
+	color: white;
+	font-size: 14px;
+	font-weight: 200;
+}
+
+/* IMG */
+img{
+	margin-top: 90px;
+	margin-left: 50px;
+	width: 260px;
+}
+
+/* FORMULARIO */
+input[type=text],
+input[type=number],
+select{
+	outline: none;
+}
+
+.form__input{
+	width: 278px;
+	margin-bottom: 15px;
+	padding: 5px 0 6px 2px;
+	background-color: transparent;
+	border: none;
+	height: 12px;
+	border-bottom: 1px solid white;
+	color: #C4C4C4;
+}
+
+.medium{
+	margin-top: 5px;
+	width: 140px;
+	margin-left: 8px;
+}
+
+/* SELECT */
+
+.title-gender{
+	display: block;
+	color: white;
+	font-size: 13px;
+	font-weight: 200;
+}
+
+.form__select{
+	background-color: transparent;
+	border: 1px solid white;
+	color: white;
+	font-size: 10px;
+	cursor: pointer;
+	width: 125px;
+	height: 20px;
+}
+
+.form__select option{
+	background-color: #3F3D56;
+}
+
+.title-select{
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: white;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+/* GENERO */
+.form__bx-gender{
+	margin-top: 3px;
+}
+
+.form__gender{
+	width: 12px;
+	border: none;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.label-gender{
+	margin-left: 2px;
+	margin-bottom: 5px;
+	color: white;
+	font-size: 14px;
+	font-weight: 200;
+}
+
+.radio-container{
+	margin-bottom: 8px;
+}
+
+/* OPT CUENTA */
+
+.opt-segunda{
+	color: white;
+	font-size: 10px;
+	font-weight: 200;
+}
+
+.opt-segunda a{
+	color: #26B0EB;
+}
+
+/* BOTON */
+.btn{
+	margin-left: 10px;
+	padding: 3px 25px;
+	background-color: #177F9F;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	font-size: 10px;
+}
+
+/* PASOS */
+#container__contain-steps{
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: row;
+	max-width: 300px;
+	left: 60%;
+	top: 300px;
+}
+
+#container__contain-steps .title-steps{
+	color: white;
+	font-size: 12px;
+	font-weight: 200;
+	display: block;
+	margin-right: 9px;
+
+}
+
+#container__steps{
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: row;
+}
+
+#container__contain-steps .bx-step{
+	width: 25px;
+	height: 5px;
+	margin-top: 8px;
+	border: none;
+	margin-left: 3px;
+}
+
+.un-check{
+	background-color: white;
+}
+
+.check{
+	background-color: #177F9F;
+}
+
